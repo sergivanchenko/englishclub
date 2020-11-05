@@ -11,3 +11,52 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app-wrapper {
+  color: white;
+  text-align: center;
+  display: grid;
+  width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  grid-template-areas:
+    'header header'
+    'nav mainPage'
+    'footer footer';
+
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+}
+
+header {
+  padding: 20px;
+  background: blue;
+}
+
+footer {
+  padding: 20px;
+  background: red;
+}
+
+nav {
+  padding: 20px;
+  background: teal;
+}
+
+main {
+  padding: 20px;
+  background: purple;
+}
+
+.pageHeader {
+  grid-area: header;
+}
+.pageFooter {
+  grid-area: footer;
+}
+.mainPage {
+  grid-area: mainPage;
+}
+.mainNav {
+  grid-area: nav;
+}
